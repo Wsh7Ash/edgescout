@@ -1,0 +1,611 @@
+{
+  "name": "edgescout",
+  "version": "1.0.0",
+  "category": "web-app",
+  "license": "MIT",
+  "runtime": "Claude Code, opencode, or any agent runtime that loads SKILL.md files",
+  "description": "50 validated edge and web-cache security skills for authorized testing: CDN and proxy layer fingerprinting, cache-key and cache-policy auditing, shared-cache leak confirmation, hardening and disclosure, with a profile-to-audit-plan CLI.",
+  "skill_count": 50,
+  "skills": [
+    {
+      "slug": "authorization-boundary-documentation",
+      "title": "Authorization Boundary Documentation",
+      "path": "skills/authorization-boundary-documentation/SKILL.md",
+      "tags": [
+        "scope",
+        "rules-of-engagement",
+        "authorization"
+      ],
+      "meta_phase": "scope",
+      "sha256": "f527652afeb95e5bff0387ec26d5646169c4cafb6505f471c602876e42306a64"
+    },
+    {
+      "slug": "cdn-contract-inventory",
+      "title": "CDN Contract Inventory",
+      "path": "skills/cdn-contract-inventory/SKILL.md",
+      "tags": [
+        "cdn",
+        "inventory",
+        "architecture"
+      ],
+      "meta_phase": "scope",
+      "sha256": "26f2a2e748e68b15586fbb1de859700cb3cb277d767ae436bc7427a46f80b020"
+    },
+    {
+      "slug": "personal-data-cache-scope",
+      "title": "Personal Data Cache Scope",
+      "path": "skills/personal-data-cache-scope/SKILL.md",
+      "tags": [
+        "personal-data",
+        "privacy",
+        "scope"
+      ],
+      "meta_phase": "scope",
+      "sha256": "22d0c8fd0bb9fe8729c13866790b57f48395bc92d22df8d8704ae7a0b809275c"
+    },
+    {
+      "slug": "origin-direct-access-scope",
+      "title": "Origin Direct Access Scope",
+      "path": "skills/origin-direct-access-scope/SKILL.md",
+      "tags": [
+        "origin",
+        "scope",
+        "architecture"
+      ],
+      "meta_phase": "scope",
+      "sha256": "70ad79a48f82182062b63a3269801498448212494c11475cedfbc277b71345d5"
+    },
+    {
+      "slug": "shared-cache-consent-check",
+      "title": "Shared Cache Consent Check",
+      "path": "skills/shared-cache-consent-check/SKILL.md",
+      "tags": [
+        "consent",
+        "cdn",
+        "privacy"
+      ],
+      "meta_phase": "scope",
+      "sha256": "f6d4b629f30304a4ea29690698413d17aece510578286c6a80e5cca4c2532ad2"
+    },
+    {
+      "slug": "non-destructive-probe-selection",
+      "title": "Non-Destructive Probe Selection",
+      "path": "skills/non-destructive-probe-selection/SKILL.md",
+      "tags": [
+        "methodology",
+        "safety",
+        "probes"
+      ],
+      "meta_phase": "scope",
+      "sha256": "9f083d846d497601f8f88d973aa4236efe86e8fb7dc6e5f1bddbc0cc2f314f9e"
+    },
+    {
+      "slug": "evidence-hygiene-for-cached-responses",
+      "title": "Evidence Hygiene for Cached Responses",
+      "path": "skills/evidence-hygiene-for-cached-responses/SKILL.md",
+      "tags": [
+        "evidence",
+        "privacy",
+        "reporting"
+      ],
+      "meta_phase": "scope",
+      "sha256": "958249e3ea8cacb86e199e0a26d2f2fa0894931ce693d880ee3387cae1dfcbac"
+    },
+    {
+      "slug": "edge-layer-identification",
+      "title": "Edge Layer Identification",
+      "path": "skills/edge-layer-identification/SKILL.md",
+      "tags": [
+        "fingerprint",
+        "cdn",
+        "headers"
+      ],
+      "meta_phase": "fingerprint",
+      "sha256": "793e0067703ed3285babcf398480f1ea4d89654dd7186fdb683dc26ec3ce3f21"
+    },
+    {
+      "slug": "cache-status-header-reading",
+      "title": "Cache Status Header Reading",
+      "path": "skills/cache-status-header-reading/SKILL.md",
+      "tags": [
+        "fingerprint",
+        "headers",
+        "cache-status"
+      ],
+      "meta_phase": "fingerprint",
+      "sha256": "50078984efe6cd6c03bc632bb753a2ab3d627ab9b788bb677fbfbf010675183d"
+    },
+    {
+      "slug": "freshness-and-age-derivation",
+      "title": "Freshness and Age Derivation",
+      "path": "skills/freshness-and-age-derivation/SKILL.md",
+      "tags": [
+        "fingerprint",
+        "ttl",
+        "headers"
+      ],
+      "meta_phase": "fingerprint",
+      "sha256": "1cd88865afc743398b93309397cbbeabef4121b87e797b766a627a89160359d5"
+    },
+    {
+      "slug": "cache-key-composition-probing",
+      "title": "Cache Key Composition Probing",
+      "path": "skills/cache-key-composition-probing/SKILL.md",
+      "tags": [
+        "fingerprint",
+        "cache-key",
+        "methodology"
+      ],
+      "meta_phase": "fingerprint",
+      "sha256": "1d2927a06ef5ad6e5395f882a8b91ceb758f807f430c8e7095ce7e4d04d6b4f6"
+    },
+    {
+      "slug": "origin-versus-edge-error-signature",
+      "title": "Origin Versus Edge Error Signature",
+      "path": "skills/origin-versus-edge-error-signature/SKILL.md",
+      "tags": [
+        "fingerprint",
+        "errors",
+        "attribution"
+      ],
+      "meta_phase": "fingerprint",
+      "sha256": "27883c5f7927b0f907214061352b9d82b382f51b9f40f43bb7a4b04dc769fc97"
+    },
+    {
+      "slug": "secondary-layer-detection",
+      "title": "Secondary Layer Detection",
+      "path": "skills/secondary-layer-detection/SKILL.md",
+      "tags": [
+        "fingerprint",
+        "architecture",
+        "layers"
+      ],
+      "meta_phase": "fingerprint",
+      "sha256": "6fcbd98196fde52bd48c0709b4c489dfdc403ffb092f15d58de8a598ad9b0432"
+    },
+    {
+      "slug": "vary-variant-mapping",
+      "title": "Vary Variant Mapping",
+      "path": "skills/vary-variant-mapping/SKILL.md",
+      "tags": [
+        "fingerprint",
+        "vary",
+        "cache-key"
+      ],
+      "meta_phase": "fingerprint",
+      "sha256": "bef59c2d1b93ffeeb1a1c1885d028e129afa8f7f53ef3628502f2b5fc74bb3bb"
+    },
+    {
+      "slug": "config-propagation-model-detection",
+      "title": "Config Propagation Model Detection",
+      "path": "skills/config-propagation-model-detection/SKILL.md",
+      "tags": [
+        "fingerprint",
+        "configuration",
+        "architecture"
+      ],
+      "meta_phase": "fingerprint",
+      "sha256": "1bd3925523553e48b87f4cd7f45a7e71e836049251f9e9a0305f99f2a7670919"
+    },
+    {
+      "slug": "unkeyed-header-reflection-audit",
+      "title": "Unkeyed Header Reflection Audit",
+      "path": "skills/unkeyed-header-reflection-audit/SKILL.md",
+      "tags": [
+        "audit",
+        "cache-key",
+        "headers"
+      ],
+      "meta_phase": "audit",
+      "sha256": "67e17277df5f6bb239a634871ae6f930d749c5bc408a13ce64d5f2997b3d751d"
+    },
+    {
+      "slug": "query-parameter-key-composition-audit",
+      "title": "Query Parameter Key Composition Audit",
+      "path": "skills/query-parameter-key-composition-audit/SKILL.md",
+      "tags": [
+        "audit",
+        "cache-key",
+        "query"
+      ],
+      "meta_phase": "audit",
+      "sha256": "9a73c3e4475c786c15062f341a8371e7b6bd11cbbbe04f43c8c3948063f23a63"
+    },
+    {
+      "slug": "path-normalization-key-collision",
+      "title": "Path Normalization Key Collision",
+      "path": "skills/path-normalization-key-collision/SKILL.md",
+      "tags": [
+        "audit",
+        "cache-key",
+        "paths"
+      ],
+      "meta_phase": "audit",
+      "sha256": "af54c0251507e41b1793359e05493d6aba925e236a5378b5e422f4a78b5b4aa2"
+    },
+    {
+      "slug": "content-negotiation-key-dimensions",
+      "title": "Content Negotiation Key Dimensions",
+      "path": "skills/content-negotiation-key-dimensions/SKILL.md",
+      "tags": [
+        "audit",
+        "content-negotiation",
+        "vary"
+      ],
+      "meta_phase": "audit",
+      "sha256": "1f7cd696b63d602499683a309b579cca4476dd985e6a4ad82c76632719377d52"
+    },
+    {
+      "slug": "authenticated-response-shared-storage",
+      "title": "Authenticated Response Shared Storage",
+      "path": "skills/authenticated-response-shared-storage/SKILL.md",
+      "tags": [
+        "audit",
+        "authentication",
+        "shared-cache"
+      ],
+      "meta_phase": "audit",
+      "sha256": "85eb6faf7ad891995ab176d4ecfad354997e26f04a4bb98e7ddc323a2b8cd500"
+    },
+    {
+      "slug": "set-cookie-on-cacheable-response",
+      "title": "Set-Cookie on Cacheable Response",
+      "path": "skills/set-cookie-on-cacheable-response/SKILL.md",
+      "tags": [
+        "audit",
+        "cookies",
+        "shared-cache"
+      ],
+      "meta_phase": "audit",
+      "sha256": "6ea2417474fece6df3c7fbfef4220db1fc66c1dbb6ff11620250b7228bbfff47"
+    },
+    {
+      "slug": "cache-control-override-conflict",
+      "title": "Cache-Control Override Conflict",
+      "path": "skills/cache-control-override-conflict/SKILL.md",
+      "tags": [
+        "audit",
+        "headers",
+        "policy"
+      ],
+      "meta_phase": "audit",
+      "sha256": "6670c828b35f4ac3d72824b109f74f70b50b7f3b1666caf131a4b8c9ead297fe"
+    },
+    {
+      "slug": "verb-handling-in-shared-storage",
+      "title": "Verb Handling in Shared Storage",
+      "path": "skills/verb-handling-in-shared-storage/SKILL.md",
+      "tags": [
+        "audit",
+        "verbs",
+        "shared-cache"
+      ],
+      "meta_phase": "audit",
+      "sha256": "4b5291179798d9ecb97547db9c45af4c558730017af846753e338af9c6f0a92c"
+    },
+    {
+      "slug": "unkeyed-host-url-generation",
+      "title": "Unkeyed Host URL Generation",
+      "path": "skills/unkeyed-host-url-generation/SKILL.md",
+      "tags": [
+        "audit",
+        "host-header",
+        "url-generation"
+      ],
+      "meta_phase": "audit",
+      "sha256": "cec2dbf74e955b41d71b59f8da9cf3f9861fda8ba218b3f99c1236d84ec05230"
+    },
+    {
+      "slug": "cache-key-duplication-splitting",
+      "title": "Cache Key Duplication Splitting",
+      "path": "skills/cache-key-duplication-splitting/SKILL.md",
+      "tags": [
+        "audit",
+        "capacity",
+        "cache-key"
+      ],
+      "meta_phase": "audit",
+      "sha256": "1117ab7757e65edfcdaca7819a9f8270f06287372c0e2ad5cfe105b44325abf4"
+    },
+    {
+      "slug": "stale-window-overflow-audit",
+      "title": "Stale Window Overflow Audit",
+      "path": "skills/stale-window-overflow-audit/SKILL.md",
+      "tags": [
+        "audit",
+        "ttl",
+        "freshness"
+      ],
+      "meta_phase": "audit",
+      "sha256": "b20c0658a17309633f4c7fff393a325a0e7e999c85da0fb2cfc9b57e7c87fd7d"
+    },
+    {
+      "slug": "overbroad-match-rule-review",
+      "title": "Overbroad Match Rule Review",
+      "path": "skills/overbroad-match-rule-review/SKILL.md",
+      "tags": [
+        "audit",
+        "configuration",
+        "policy"
+      ],
+      "meta_phase": "audit",
+      "sha256": "da590ccaf36488f64f0a60c16b6b351211543d11581bbbeb56295a8fb381a330"
+    },
+    {
+      "slug": "signed-asset-key-bypass-audit",
+      "title": "Signed Asset Key Bypass Audit",
+      "path": "skills/signed-asset-key-bypass-audit/SKILL.md",
+      "tags": [
+        "audit",
+        "signed-urls",
+        "access-control"
+      ],
+      "meta_phase": "audit",
+      "sha256": "64e346254af78f9d9effbcc2e633886b3feabdc5927f00a05a05650d3f16001c"
+    },
+    {
+      "slug": "purge-coverage-gap-analysis",
+      "title": "Purge Coverage Gap Analysis",
+      "path": "skills/purge-coverage-gap-analysis/SKILL.md",
+      "tags": [
+        "audit",
+        "purge",
+        "operations"
+      ],
+      "meta_phase": "audit",
+      "sha256": "80fff7edbbd5dac98bfaa1de336758ed78425ca3dea897e649ab7e34012363af"
+    },
+    {
+      "slug": "negative-response-storage-audit",
+      "title": "Negative Response Storage Audit",
+      "path": "skills/negative-response-storage-audit/SKILL.md",
+      "tags": [
+        "audit",
+        "errors",
+        "availability"
+      ],
+      "meta_phase": "audit",
+      "sha256": "79b4e78171219bdd7282a5cda2ca27eeabe7b3fc822198b858cb4782477205ad"
+    },
+    {
+      "slug": "origin-address-exposure-detection",
+      "title": "Origin Address Exposure Detection",
+      "path": "skills/origin-address-exposure-detection/SKILL.md",
+      "tags": [
+        "detect",
+        "origin",
+        "recon"
+      ],
+      "meta_phase": "detect",
+      "sha256": "afe7a97b1fb7d9d56fcf4e85515d2fb6356fe9d74c6440f80f27596e316c7feb"
+    },
+    {
+      "slug": "clean-state-reproduction-recipe",
+      "title": "Clean-State Reproduction Recipe",
+      "path": "skills/clean-state-reproduction-recipe/SKILL.md",
+      "tags": [
+        "detect",
+        "reproduction",
+        "evidence"
+      ],
+      "meta_phase": "detect",
+      "sha256": "6c4655536866cfee21e4fbf6f7bf9438181823f8902e3f17227068be1dcb7433"
+    },
+    {
+      "slug": "cross-client-leak-confirmation",
+      "title": "Cross-Client Leak Confirmation",
+      "path": "skills/cross-client-leak-confirmation/SKILL.md",
+      "tags": [
+        "detect",
+        "isolation",
+        "shared-cache"
+      ],
+      "meta_phase": "detect",
+      "sha256": "d916ab2493b2d29eded1d59ac0bed86cdfb493e3136672728f582839ab144fa2"
+    },
+    {
+      "slug": "conditional-request-behavior-audit",
+      "title": "Conditional Request Behavior Audit",
+      "path": "skills/conditional-request-behavior-audit/SKILL.md",
+      "tags": [
+        "detect",
+        "validators",
+        "revalidation"
+      ],
+      "meta_phase": "detect",
+      "sha256": "0cb8126cd5b65b51841b8a67cf176ad90d8e2dd1e1ebfc39747a1d44953131e2"
+    },
+    {
+      "slug": "range-request-key-collision",
+      "title": "Range Request Key Collision",
+      "path": "skills/range-request-key-collision/SKILL.md",
+      "tags": [
+        "detect",
+        "range",
+        "cache-key"
+      ],
+      "meta_phase": "detect",
+      "sha256": "6e7f7ea23dd660234336e065d5326ec3274ad167c5059ed4298751a94081393d"
+    },
+    {
+      "slug": "redirect-chain-storage-behavior",
+      "title": "Redirect Chain Storage Behavior",
+      "path": "skills/redirect-chain-storage-behavior/SKILL.md",
+      "tags": [
+        "detect",
+        "redirects",
+        "cache-key"
+      ],
+      "meta_phase": "detect",
+      "sha256": "1e3b6bbb2fa181f0c7a114be8f73572b12ffae5c8ac1dbb31758e8a5442c545b"
+    },
+    {
+      "slug": "decode-order-mismatch-detection",
+      "title": "Decode Order Mismatch Detection",
+      "path": "skills/decode-order-mismatch-detection/SKILL.md",
+      "tags": [
+        "detect",
+        "encoding",
+        "cache-key"
+      ],
+      "meta_phase": "detect",
+      "sha256": "dd6c874674482c8446657443d5b0453c16a20073468d8c8fe16d5162bcdec4fc"
+    },
+    {
+      "slug": "cross-location-content-drift",
+      "title": "Cross-Location Content Drift",
+      "path": "skills/cross-location-content-drift/SKILL.md",
+      "tags": [
+        "detect",
+        "consistency",
+        "operations"
+      ],
+      "meta_phase": "detect",
+      "sha256": "ec38def354fb39609597e67d7f1d548c419a2811f6c02bb99d2cbf7fff5d9922"
+    },
+    {
+      "slug": "identity-header-key-separation",
+      "title": "Identity Header Key Separation",
+      "path": "skills/identity-header-key-separation/SKILL.md",
+      "tags": [
+        "detect",
+        "authentication",
+        "cache-key"
+      ],
+      "meta_phase": "detect",
+      "sha256": "e494f35cb0650ea3199556cfb7a5a5759e33d8a917d40662c8136dfa9392471e"
+    },
+    {
+      "slug": "explicit-key-dimension-policy",
+      "title": "Explicit Key Dimension Policy",
+      "path": "skills/explicit-key-dimension-policy/SKILL.md",
+      "tags": [
+        "harden",
+        "cache-key",
+        "policy"
+      ],
+      "meta_phase": "harden",
+      "sha256": "fd048ccb468ed15ab35cf977e011dc623dd80ca05071276cc1d4b23884f3b2f8"
+    },
+    {
+      "slug": "unkeyed-input-rejection",
+      "title": "Unkeyed Input Rejection",
+      "path": "skills/unkeyed-input-rejection/SKILL.md",
+      "tags": [
+        "harden",
+        "headers",
+        "defense"
+      ],
+      "meta_phase": "harden",
+      "sha256": "effb00c1b5894cd94b72778c8e9cbc3c2522d2bce7d996f0edce74612c053b46"
+    },
+    {
+      "slug": "personalized-response-private-default",
+      "title": "Personalized Response Private Default",
+      "path": "skills/personalized-response-private-default/SKILL.md",
+      "tags": [
+        "harden",
+        "privacy",
+        "policy"
+      ],
+      "meta_phase": "harden",
+      "sha256": "4eaa4f71c7ea5a772f84b441b061823102ac5cc44977312cf380510c6a5e528b"
+    },
+    {
+      "slug": "purge-runbook-authoring",
+      "title": "Purge Runbook Authoring",
+      "path": "skills/purge-runbook-authoring/SKILL.md",
+      "tags": [
+        "harden",
+        "purge",
+        "operations"
+      ],
+      "meta_phase": "harden",
+      "sha256": "030db142ef8e486307b7666c8978ec5666f32f1173ecc393bc15531983f31854"
+    },
+    {
+      "slug": "origin-exposure-lockdown",
+      "title": "Origin Exposure Lockdown",
+      "path": "skills/origin-exposure-lockdown/SKILL.md",
+      "tags": [
+        "harden",
+        "origin",
+        "network"
+      ],
+      "meta_phase": "harden",
+      "sha256": "474b06985dc796786b6b12c5694337953459704c3c54912c8a2cc6720261d31b"
+    },
+    {
+      "slug": "stale-window-bounding",
+      "title": "Stale Window Bounding",
+      "path": "skills/stale-window-bounding/SKILL.md",
+      "tags": [
+        "harden",
+        "ttl",
+        "policy"
+      ],
+      "meta_phase": "harden",
+      "sha256": "255405861ad6d644f2838b27feb8050f9be1a85974a3551e1f2677bc26443c19"
+    },
+    {
+      "slug": "edge-config-drift-monitoring",
+      "title": "Edge Config Drift Monitoring",
+      "path": "skills/edge-config-drift-monitoring/SKILL.md",
+      "tags": [
+        "harden",
+        "monitoring",
+        "configuration"
+      ],
+      "meta_phase": "harden",
+      "sha256": "98a3fd535359ebf5f47307d0ee267ac2105188379772e80e120c0c3f9f2fdd4c"
+    },
+    {
+      "slug": "edge-finding-evidence-pack",
+      "title": "Edge Finding Evidence Pack",
+      "path": "skills/edge-finding-evidence-pack/SKILL.md",
+      "tags": [
+        "document",
+        "evidence",
+        "reporting"
+      ],
+      "meta_phase": "document",
+      "sha256": "ff5f5ce29d6ae32e1412ce6cb83d00db07aabfaf09a93459823772adaf5f3e45"
+    },
+    {
+      "slug": "clean-cache-reproduction-recipe-publication",
+      "title": "Clean Cache Reproduction Recipe Publication",
+      "path": "skills/clean-cache-reproduction-recipe-publication/SKILL.md",
+      "tags": [
+        "document",
+        "reproduction",
+        "vendor"
+      ],
+      "meta_phase": "document",
+      "sha256": "088859ad6f32420c598d1a5cd8a5e7d9e0894116de8081bf91a2ad8c733cef8a"
+    },
+    {
+      "slug": "layer-aware-remediation-wording",
+      "title": "Layer-Aware Remediation Wording",
+      "path": "skills/layer-aware-remediation-wording/SKILL.md",
+      "tags": [
+        "document",
+        "remediation",
+        "communication"
+      ],
+      "meta_phase": "document",
+      "sha256": "482b99e49a40a8f778b848fb3255ac89adac919d9a41687cd9b99aa79bb2f9a4"
+    },
+    {
+      "slug": "vendor-coordinated-disclosure",
+      "title": "Vendor Coordinated Disclosure",
+      "path": "skills/vendor-coordinated-disclosure/SKILL.md",
+      "tags": [
+        "document",
+        "disclosure",
+        "coordination"
+      ],
+      "meta_phase": "document",
+      "sha256": "d8492d73be72c93356e3003414d7d1a7d304766b83165239c20b4641982851c8"
+    }
+  ]
+}

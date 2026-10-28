@@ -1,0 +1,17 @@
+{
+  "target": "app.example.test",
+  "hosts": ["app.example.test", "assets.example.test"],
+  "layers": ["vendor-cdn", "internal-proxy"],
+  "content_classes": ["public-assets", "personal-account", "tenant-reports"],
+  "unkeyed_headers": ["x-original-url", "x-forwarded-host"],
+  "observed": {
+    "cache_status_header": "cf-cache-status",
+    "auth_header": "cookie",
+    "stale_allowance": "stale-while-revalidate=86400"
+  },
+  "questions": [
+    "does the internal proxy store responses independently of the edge",
+    "which purge type clears keyed variants",
+    "are signed asset URLs part of the cache key"
+  ]
+}
